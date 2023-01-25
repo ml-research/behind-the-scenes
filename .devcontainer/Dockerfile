@@ -1,10 +1,10 @@
 # FROM python:3.5.2-slim
 # FROM nytimes/blender:latest
 # FROM nytimes/blender:2.80-gpu-ubuntu18.04
-# FROM nvidia/cuda:10.2-devel-ubuntu18.04
+FROM nvidia/cuda:11.4.2-devel-ubuntu18.04
 #FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu14.04
 # FROM nvidia/cuda:8.0-cudnn5-runtime-ubuntu16.04
-FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
+#FROM nvidia/cuda:10.0-cudnn5-devel-ubuntu16.04
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 
