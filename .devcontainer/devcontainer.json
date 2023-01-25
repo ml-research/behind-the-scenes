@@ -24,5 +24,9 @@
         },
         "workspaceMount": "source=${localWorkspaceFolder}/image-generation,target=/workspace,type=bind,consistency=delegated",
         "workspaceFolder": "/workspace"
-    }
+    },
+    "runArgs": [
+        "--gpus",
+        "all"
+    ]
 }
