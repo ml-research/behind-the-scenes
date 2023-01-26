@@ -37,6 +37,7 @@ RUN python3 -m pip install joblib
 RUN python3 -m pip install opencv-python
 RUN python3 -m pip install cython
 RUN python3 -m pip install pycocotools
+RUN python3 -m pip install rtpt
 
 #get the dependencies for the script
 RUN mkdir -p /local/
