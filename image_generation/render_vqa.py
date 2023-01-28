@@ -10,7 +10,7 @@ import math, sys, random, argparse, json, os, tempfile
 from datetime import datetime as dt
 from collections import Counter
 
-from rtpt import RTPT
+# from rtpt import RTPT
 from ilp_data_gen import get_ilp_problem
 from vqa_gen import get_vqa_problem
 from vqa_gen import SceneGenerator
@@ -384,14 +384,14 @@ def generate_images(args):
     # print('objs_tuple', ilp_problem.pos_examples)
 
     # Create RTPT object
-    rtpt = RTPT(
-        name_initials="HS",
-        experiment_name="image_generation",
-        max_iterations=len(scene_generator.scenes),
-    )
+    # rtpt = RTPT(
+    #    name_initials="HS",
+    #    experiment_name="image_generation",
+    #    max_iterations=len(scene_generator.scenes),
+    # )
 
     # Start the RTPT tracking
-    rtpt.start()
+    # rtpt.start()
 
     for i in range(len(scene_generator.scenes)):
         scene = scene_generator.scenes[i]
@@ -432,7 +432,7 @@ def generate_images(args):
             # with open(answer_path, "w") as f:
             #    answer_str = ",".join(answer)
             #    f.write(answer_str)
-        rtpt.step()
+        # rtpt.step()
 
     # After rendering all images, combine the JSON files for each scene into a
     # single JSON file.
